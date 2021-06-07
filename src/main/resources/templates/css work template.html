@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <title>JacKr Enterprises</title>
+  </head>
+  <body>
+    <div class="container">
+     <header class="header">
+        <nav class="header__nav">
+            <span class="twentyPix"><h1>JacKr Enterprises<h1></span>
+          <ul class="header__nav_list">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Treks</a></li>
+          </ul>
+        </nav>
+    </header>
+    <!-- <div th:insert="fragments/header :: header">...</div> -->
+    <div id="content" layout:fragment="content">
+      <p>This is filled by the content template.</p>
+    </div>
+
+    <footer>
+        <p>
+            <span class="footTwentyPix">
+                JacKr Enterprises
+              </span>
+            &copy; 2021
+      </p>
+      </footer>
+    <!-- <div th:insert="fragments/footer :: footer">...</div> -->
+   </div>
+  </body>
+</html>
