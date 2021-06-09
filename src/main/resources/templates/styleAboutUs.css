@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: rgb(3, 3, 3);
+  font: 1.618rem sans-serif;
+  font-family: sans-serif;
+  margin-top: 3rem;
+}
+
+h1 {
+  padding-top: 3rem;
+  font-family: fantasy;
+  font-size: 1.75em;
+  margin-top: 3rem;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+}
+
+.container {
+  background-color: rgb(141, 224, 116);
+  margin: 0 auto;
+  max-width: 60rem;
+  margin-top: 3rem;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 90%;
+  box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
+}
+
+.about-section {
+  font-size: 0.75em;
+  margin-top: 3rem;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.employee {
+  background-color: rgba(253, 253, 253, 0.623);
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  max-width: 60rem;
+  margin-top: 3rem;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 90%;
+  box-shadow: -7px 1px 36px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px 1px 36px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 1px 36px -10px rgba(0, 0, 0, 0.75);
+}
+
+.employee h2 {
+  font-size: 1.618rem;
+}
+
+.title {
+  font-size: 1.25rem;
+}
+
+p1 {
+  font-size: 0.75rem;
+}
+
+.email {
+  font-size: 0.6rem;
+}
+
+button {
+  background-color: rgb(141, 224, 116);
+  border: 1px forestgreen;
+  font-size: 0.75rem;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  text-decoration: none;
+}
+
+button:hover {
+  background: rgb(248, 211, 179);
+  border: 1px solid forestgreen;
+  border-radius: 1rem;
+  box-shadow: -4px, 6px 5px 0px (75, 1, 65, 0.75);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .employee {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
