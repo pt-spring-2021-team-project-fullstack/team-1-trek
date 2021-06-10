@@ -4,8 +4,8 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
 
-public interface TrekListRepository extends CrudRepository<TrekList, Long> {
-        Optional<TrekList> findAll(String TrekList);
+public interface TrekRepository extends CrudRepository<Trek, Long> {
+        Optional<Trek> findAll(String TrekList);
 
     }
 

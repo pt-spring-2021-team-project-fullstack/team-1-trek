@@ -13,7 +13,7 @@ public class TrekType {
 
     private String trekType;
 
-    private Collection<TrekList> trekList;
+    private Collection<Trek> trekList;
 
     public String getTrekType() {
         return trekType;
@@ -23,7 +23,7 @@ public class TrekType {
         this.trekType = trekType;
     }
 
-    public Collection<TrekList> getTrekList() {
+    public Collection<Trek> getTrekList() {
 
         return trekList;
     }

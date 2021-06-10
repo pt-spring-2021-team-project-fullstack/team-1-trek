@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 public class Populator implements CommandLineRunner {
 
     @Resource
-    private TrekListRepository trekListRepo;
+    private TrekRepository trekListRepo;
     private TrekTypeRepository trekTypeRepo;
 
     @Override
@@ -26,13 +26,13 @@ public class Populator implements CommandLineRunner {
         trekTypeRepo.save(horseBackRiding);
 
 
-        TrekList trek1 = new TrekList("Mount Kilimanjaro", "Africa", "Tanzania", "climbing");
-        TrekList trek2 = new TrekList("Andes", "South America", "Venezuela", "horseback riding");
-        TrekList trek3 = new TrekList("Rocky Mountains", "North America", "Canada", "cross-country skiing");
-        TrekList trek4 = new TrekList("Himalayas", "South Asia", "Indian Himalayan Region", "climbing");
-        TrekList trek5 = new TrekList("Alps", "Western Europe", "Switzerland", "hiking");
-        TrekList trek6 = new TrekList("Great Dividing Range", "Australia", "New South Wales", "horseback riding");
-        TrekList trek7 = new TrekList("TransAntarctic Mountains", "Antarctica", "West Antarctica", "climbing");
+        Trek trek1 = new Trek("Mount Kilimanjaro", "Africa", "Tanzania", "climbing");
+        Trek trek2 = new Trek("Andes", "South America", "Venezuela", "horseback riding");
+        Trek trek3 = new Trek("Rocky Mountains", "North America", "Canada", "cross-country skiing");
+        Trek trek4 = new Trek("Himalayas", "South Asia", "Indian Himalayan Region", "climbing");
+        Trek trek5 = new Trek("Alps", "Western Europe", "Switzerland", "hiking");
+        Trek trek6 = new Trek("Great Dividing Range", "Australia", "New South Wales", "horseback riding");
+        Trek trek7 = new Trek("TransAntarctic Mountains", "Antarctica", "West Antarctica", "climbing");
 
         trekListRepo.save(trek1);
         trekListRepo.save(trek2);

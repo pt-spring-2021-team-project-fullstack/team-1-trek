@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 public class TrekListController {
 
     @Resource
-    private TrekListRepository trekListRepo;
+    private TrekRepository trekListRepo;
 
     @RequestMapping("/trek-list")
     public String displayTrekList(Model model) {

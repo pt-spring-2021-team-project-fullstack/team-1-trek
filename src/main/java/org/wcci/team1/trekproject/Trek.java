@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class TrekList {
+public class Trek {
 
     @Id
     @GeneratedValue
@@ -39,7 +39,7 @@ public class TrekList {
         return typeOfTrek;
     }
 
-    public TrekList(String nameOfTrek, String continentOfTrek, String regionOfTrek, String typeOfTrek) {
+    public Trek(String nameOfTrek, String continentOfTrek, String regionOfTrek, String typeOfTrek) {
         this.nameOfTrek = nameOfTrek;
         this.continentOfTrek = continentOfTrek;
         this.regionOfTrek = regionOfTrek;
