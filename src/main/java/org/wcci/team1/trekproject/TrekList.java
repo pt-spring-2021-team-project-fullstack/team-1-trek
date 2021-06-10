@@ -15,6 +15,9 @@ public class TrekList {
     private String nameOfTrek;
     private String continentOfTrek;
     private String regionOfTrek;
+    private String trekDescription;
+    private String trekImage;
+
 
     @ManyToOne
     private String typeOfTrek;
