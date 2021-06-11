@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @SuppressWarnings("serial")
 @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "Bad request. Trek not found!")
-public class TrekNotFoundException {
+public class TrekNotFoundException extends Exception {
 }
 
