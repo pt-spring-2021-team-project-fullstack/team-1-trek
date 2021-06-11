@@ -15,7 +15,7 @@ public class Continent {
     private String image;
     @OneToMany(mappedBy = "continent")
     private Collection<Trek> treks;
-    @OneToMany(mappedBy = "region")
+    @OneToMany(mappedBy = "continent")
     private Collection<Region> regions;
 
     public Long getId() {

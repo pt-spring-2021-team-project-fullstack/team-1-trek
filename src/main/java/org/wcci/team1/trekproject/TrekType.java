@@ -16,7 +16,7 @@ public class TrekType {
     private String name;
     private String description;
     private String image;
-    @OneToMany(mappedBy = "typeOfTrek")
+    @OneToMany(mappedBy = "trekType")
     private Collection<Trek> treks;
 
     public String getName() {

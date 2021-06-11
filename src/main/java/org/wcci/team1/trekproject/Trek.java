@@ -39,7 +39,7 @@ public class Trek {
         return region;
     }
 
-    public TrekType getTypeOfTrek() {
+    public TrekType getTrekType() {
         return trekType;
     }
 
