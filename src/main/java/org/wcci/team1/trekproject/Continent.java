@@ -1,9 +1,12 @@
 package org.wcci.team1.trekproject;
 
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Collection;
 import java.util.Objects;
+
 
 @Entity
 public class Continent {
@@ -65,3 +68,5 @@ public class Continent {
         return Objects.hash(id);
     }
 }
+
+

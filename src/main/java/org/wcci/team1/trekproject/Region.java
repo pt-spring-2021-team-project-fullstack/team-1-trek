@@ -1,6 +1,10 @@
 package org.wcci.team1.trekproject;
 
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Objects;
 
 @Entity
@@ -17,19 +21,15 @@ public class Region {
     public Long getId() {
         return id;
     }
-
     public String getName() {
         return name;
     }
-
     public String getDescription() {
         return description;
     }
-
     public String getImage() {
         return image;
     }
-
     public Continent getContinent() {
         return continent;
     }
@@ -58,3 +58,4 @@ public class Region {
         return Objects.hash(id);
     }
 }
+
