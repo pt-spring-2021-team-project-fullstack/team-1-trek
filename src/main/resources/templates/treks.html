@@ -5,7 +5,8 @@
       xmlns:th="http://www.thymeleaf.org">
 
 <main layout:fragment="content">
-    <article th:each="trek: ${treks}">
+    <article th
+             :each="trek: ${treks}">
         <a th:href="@{/trek(id=${trek.id})}">
         </a>
         <a th:href="@{/trek(id=${trek.id})}">
