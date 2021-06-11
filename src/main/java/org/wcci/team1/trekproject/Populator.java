@@ -10,8 +10,11 @@ public class Populator implements CommandLineRunner {
 
     @Resource
     private ContinentRepository continentRepo;
+    @Resource
     private RegionRepository regionRepo;
+    @Resource
     private TrekTypeRepository trekTypeRepo;
+    @Resource
     private TrekRepository trekRepo;
 
     @Override
@@ -40,6 +43,7 @@ public class Populator implements CommandLineRunner {
         Region tanzania= new Region("Tanzania", "description for Tanzania", "/images/Tanzania.jpg",africa);
         Region newSouthWales = new Region("New South Wales", "description for New South Wales", "/images/NewSouthWales.jpg",australia);
         Region dancoCoast = new Region("Danco Coast", "description for  Danco Coast", "/images/ Danco Coast.jpg",antarctica);
+
 
         regionRepo.save(lakeLouise);
         regionRepo.save(switzerland);
