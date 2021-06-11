@@ -3,7 +3,9 @@ package org.wcci.team1.trekproject;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Collection;
+import java.util.Objects;
 
 @Entity
 public class TrekType {
@@ -11,21 +13,47 @@ public class TrekType {
     @GeneratedValue
     private Long id;
 
-    private String trekType;
+    private String name;
+    private String description;
+    private String image;
+    @OneToMany(mappedBy = "trekType")
+    private Collection<Trek> treks;
 
-    private Collection<TrekList> trekList;
-
-    public String getTrekType() {
-        return trekType;
+    public String getName() {
+        return name;
     }
 
-    public TrekType(String trekType) {
-        this.trekType = trekType;
+    public String getDescription(){
+        return description;
     }
 
-    public Collection<TrekList> getTrekList() {
+    public String getImage(){
+        return image;
+    }
+    public Collection<Trek> getTreks() {
+        return treks;
+    }
 
-        return trekList;
+    protected TrekType(){
+    }
+
+    public TrekType(String name, String description, String image) {
+        this.name = name;
+        this.description = description;
+        this.image = image;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TrekType trekType = (TrekType) o;
+        return Objects.equals(id, trekType.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
 

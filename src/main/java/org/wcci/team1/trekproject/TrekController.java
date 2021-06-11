@@ -13,12 +13,12 @@ public class TrekController {
   private TrekRepository trekRepo;
 
   @RequestMapping("/treks")
-    public String findaAllTreks(Model model) {
+    public String findAllTreks(Model model) {
       model.addAttribute("treksModel", trekRepo.findAll());
       return "treksTemplate";
   }
 
-    @RequestMapping("/review")
+    @RequestMapping("/trek")
     public String findOneTrek(@RequestParam(value = "id") Long id, Model model) throws TrekNotFoundException {
 
         if (trekRepo.findOne(id) == null) {

@@ -1,25 +1,27 @@
 package org.wcci.team1.trekproject;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.Collection;
+import javax.persistence.ManyToOne;
 import java.util.Objects;
 
-
 @Entity
-public class Continent {
+public class Trek {
+
     @Id
     @GeneratedValue
     private Long id;
     private String name;
     private String description;
     private String image;
-    @OneToMany(mappedBy = "continent")
-    private Collection<Trek> treks;
-    @OneToMany(mappedBy = "continent")
-    private Collection<Region> regions;
+    @ManyToOne
+    private Continent continent;
+    @ManyToOne
+    private Region region;
+    @ManyToOne
+    private TrekType trekType;
 
     public Long getId() {
         return id;
@@ -29,38 +31,36 @@ public class Continent {
         return name;
     }
 
-    public String getDescription() {
-        return description;
+    public Continent getContinent() {
+        return continent;
     }
 
-    public String getImage() {
-        return image;
+    public Region getRegion() {
+        return region;
     }
 
-    public Collection<Trek> getTreks() {
-        return treks;
+    public TrekType getTrekType() {
+        return trekType;
     }
 
-    public Collection<Region> getRegions() {
-        return regions;
+    protected Trek() {
     }
 
-    protected Continent(){
-
-    }
-
-    public Continent(String name, String description, String image) {
+    public Trek(String name, String description, String image, Continent continent, Region region, TrekType trekType) {
         this.name = name;
         this.description = description;
         this.image = image;
+        this.continent = continent;
+        this.region = region;
+        this.trekType = trekType;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Continent continent = (Continent) o;
-        return Objects.equals(id, continent.id);
+        Trek trek = (Trek) o;
+        return Objects.equals(id, trek.id);
     }
 
     @Override
@@ -68,5 +68,3 @@ public class Continent {
         return Objects.hash(id);
     }
 }
-
-

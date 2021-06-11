@@ -5,7 +5,9 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.Optional;
 
 public interface ContinentRepository extends CrudRepository<Continent, Long> {
-        Optional<Region> findByName(String name);
-        Region findById(long id);
-    }
+    @Override
+    Optional<Continent> findById(Long aLong);
+
+
+}
 
