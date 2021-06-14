@@ -69,7 +69,7 @@ public class Populator implements CommandLineRunner {
         Trek trek4 = new Trek("Andes","You go horseback riding in the Andes","/images/Andes.jpg",southAmerica,venezuela,horsebackRiding);
         Trek trek5 = new Trek("Mount Kilimanjaro","You will climb to the top of Mount Kilimanjaro","/images/MountKilimanjaro.jpg",africa,tanzania,climbing);
         Trek trek6 = new Trek("Great Dividing Range", "You will go horseback riding in the Great Dividing Range","/images/GreatDividingRange.jpg",australia,newSouthWales,horsebackRiding);
-        Trek trek7 = new Trek("Mt Tennant.","You will go cross-country skiing on Mt Tennant","/images/Mt Tennant.jpg",antarctica,dancoCoast,crossCountrySkiing);
+        Trek trek7 = new Trek("Mt Tennant","You will go cross-country skiing on Mt Tennant","/images/MtTennant.jpg",antarctica,dancoCoast,crossCountrySkiing);
 
 
         trekRepo.save(trek1);
