@@ -9,14 +9,14 @@ import javax.annotation.Resource;
 
 @Controller
 public class TrekController {
-  @Resource
-  private TrekRepository trekRepo;
+    @Resource
+    private TrekRepository trekRepo;
 
-  @RequestMapping("/treks")
+    @RequestMapping("/treks")
     public String findAllTreks(Model model) {
-      model.addAttribute("treks", trekRepo.findAll());
-      return "treks";
-  }
+        model.addAttribute("treks", trekRepo.findAll());
+        return "treks";
+    }
 
     @RequestMapping("/trek")
     public String findOneTrek(@RequestParam(value = "id") Long id, Model model) throws TrekNotFoundException {
@@ -28,16 +28,4 @@ public class TrekController {
         model.addAttribute("trekModel", trekRepo.findById(id));
         return "trekTemplate";
     }
-
-//    @RequestMapping("/treks")
-//    public String findAllTreks(Model model) {
-//      model.addAttribute("treks", trekRepo.findAll());
-//      return "treks";
-//    }
-
 }
-
-
-
-
-
