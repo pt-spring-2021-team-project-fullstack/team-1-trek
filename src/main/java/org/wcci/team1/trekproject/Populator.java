@@ -25,8 +25,8 @@ public class Populator implements CommandLineRunner {
         Continent asia = new Continent("Asia","Asia Description", "/images/Asia.jpg");
         Continent southAmerica = new Continent("South America","South America Description", "/images/Africa.jpg");
         Continent africa = new Continent("Africa","Africa Description", "/images/Africa.jpg");
-        Continent australia = new Continent("Australia","Australia Description", "/images/Australia.jpg");
-        Continent antarctica = new Continent("Antarctica","Antarctica Description", "/images/Antarctica.jpg");
+        Continent australia = new Continent("Australia","Eastern side of Australia, where most of the population resides. The climate in the area is dominated by a humid subtropical zone, with some tropical, and some oceanic climate zones. ", "/images/Australia.jpg");
+        Continent antarctica = new Continent("Antarctica","This is in the Antarctic Peninsula, the mountains elevation is approximately 2,264ft. ", "/images/Antarctica.jpg");
 
         continentRepo.save(northAmerica);
         continentRepo.save(europe);
@@ -42,7 +42,7 @@ public class Populator implements CommandLineRunner {
         Region venezuela = new Region("Venezuela", "description for Venezuela", "/images/Venezuela.jpg",southAmerica);
         Region tanzania= new Region("Tanzania", "description for Tanzania", "/images/Tanzania.jpg",africa);
         Region newSouthWales = new Region("New South Wales", "description for New South Wales", "/images/NewSouthWales.jpg",australia);
-        Region dancoCoast = new Region("Danco Coast", "description for  Danco Coast", "/images/ Danco Coast.jpg",antarctica);
+         Region dancoCoast = new Region("Danco Coast", "description for  Danco Coast", "/images/ Danco Coast.jpg",antarctica);
 
 
         regionRepo.save(lakeLouise);
@@ -53,7 +53,7 @@ public class Populator implements CommandLineRunner {
         regionRepo.save(newSouthWales);
         regionRepo.save(dancoCoast);
 
-        TrekType hiking = new TrekType("Hiking","hiking description", "/images/Hiking.jpg");
+        TrekType hiking = new TrekType("Hiking","Hiking is a natural exercise that promotes physical fitness, the terrain will depend upon the preferred region.", "/images/Hiking.jpg");
         TrekType climbing = new TrekType("Climbing","climbing description", "/images/Climbing.jpg");
         TrekType crossCountrySkiing = new TrekType("Cross-country skiing","cross-country skiing description", "/images/CrossCountrySkiing.jpg");
         TrekType horsebackRiding = new TrekType("Horseback riding","horseback riding description", "/images/HorseBackRiding.jpg");
@@ -69,7 +69,7 @@ public class Populator implements CommandLineRunner {
         Trek trek4 = new Trek("Andes","You go horseback riding in the Andes","/images/Andes.jpg",southAmerica,venezuela,horsebackRiding);
         Trek trek5 = new Trek("Mount Kilimanjaro","You will climb to the top of Mount Kilimanjaro","/images/MountKilimanjaro.jpg",africa,tanzania,climbing);
         Trek trek6 = new Trek("Great Dividing Range", "You will go horseback riding in the Great Dividing Range","/images/GreatDividingRange.jpg",australia,newSouthWales,horsebackRiding);
-        Trek trek7 = new Trek("Mt Tennant","You will go cross-country skiing on Mt Tennant","/images/MtTennant.jpg",antarctica,dancoCoast,crossCountrySkiing);
+        Trek trek7 = new Trek("Mt Tennant.","You will go cross-country skiing on Mt Tennant","/images/Mt Tennant.jpg",antarctica,dancoCoast,crossCountrySkiing);
 
 
         trekRepo.save(trek1);
