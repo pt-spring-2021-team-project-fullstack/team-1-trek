@@ -20,11 +20,11 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Continent northAmerica= new Continent("North America","North America Description", "/images/NorthAmerica.jpg");
-        Continent europe = new Continent("Europe","Europe Description", "/images/Europe.jpg");
+        Continent northAmerica= new Continent("North America","Rocky Mountain National Park is in northeast Colorado, flanked by the towns of Estes Park on the east and Grand Lake on the west. Other nearby towns include Lyons, Winter Park, Granby and Boulder", "/images/NorthAmerica.jpg");
+        Continent europe = new Continent("Europe","Spanning across Europe, The Alps are the highest and most extensive mountain range system that lies entirely in Europe. The Winter Olympic Games have been hosted in the Swiss, French, Italian, Austrian and German Alps", "/images/Europe.jpg");
         Continent asia = new Continent("Asia","Asia Description", "/images/Asia.jpg");
-        Continent southAmerica = new Continent("South America","South America Description", "/images/Africa.jpg");
-        Continent africa = new Continent("Africa","Africa Description", "/images/Africa.jpg");
+        Continent southAmerica = new Continent("South America","Venezuela is a country in South America, bordering the Caribbean Sea and the North Atlantic Ocean, between Colombia and Guyana. It is situated on major sea and air routes linking North and South America.", "/images/Africa.jpg");
+        Continent africa = new Continent("Africa","Kilimanjaro is the highest point in Africa. This volcanic massif stands in splendid isolation above the surrounding plains, with its snowy peak looming over the savannah. The mountain is encircled by mountain forest", "/images/Africa.jpg");
         Continent australia = new Continent("Australia","Eastern side of Australia, where most of the population resides. The climate in the area is dominated by a humid subtropical zone, with some tropical, and some oceanic climate zones. ", "/images/Australia.jpg");
         Continent antarctica = new Continent("Antarctica","This is in the Antarctic Peninsula, the mountains elevation is approximately 2,264ft. ", "/images/Antarctica.jpg");
 
@@ -39,7 +39,7 @@ public class Populator implements CommandLineRunner {
         Region lakeLouise = new Region("Lake Louise", "description for Lake Louise", "/images/LakeLouise.jpg",northAmerica);
         Region switzerland= new Region("Switzerland", "description for Switzerland", "/images/Switzerland.jpg",europe);
         Region indianHimalayanRegion = new Region("Lake Louise", "description for India Himalayan Region", "/images/IndianHimalayanRegion.jpg",asia);
-        Region venezuela = new Region("Venezuela", "description for Venezuela", "/images/Venezuela.jpg",southAmerica);
+        Region venezuela = new Region("Venezuela", "The northernmost part of the Andes has high farmlands and villages nestling beneath its dramatic peaks. The university town of Mérida is the centre of this region", "/images/Venezuela.jpg",southAmerica);
         Region tanzania= new Region("Tanzania", "description for Tanzania", "/images/Tanzania.jpg",africa);
         Region newSouthWales = new Region("New South Wales", "description for New South Wales", "/images/NewSouthWales.jpg",australia);
          Region dancoCoast = new Region("Danco Coast", "description for  Danco Coast", "/images/ Danco Coast.jpg",antarctica);
