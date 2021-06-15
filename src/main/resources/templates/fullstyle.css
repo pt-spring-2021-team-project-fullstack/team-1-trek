@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,29 +26,50 @@ a {
   text-decoration: none;
 }
 
+.card{
+    background-color: rgb(141, 224, 116);
+    border-radius: .25rem;  
+    box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
+  
+}
+
 .container {
   background-color: rgb(141, 224, 116);
+  border-radius: 1px;
   margin: 0 auto;
   max-width: 60rem;
   margin-top: 3rem;
   padding-left: 1.5em;
   padding-right: 1.5em;
   width: 90%;
-  box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -12px 1px 36px -10px rgba(0, 0, 0, 0.75);
 }
+
+.container p {
+    font-size: 0.75rem;
+    padding-top: 1.5rem;
+  }
 
 .about-section {
   font-size: 0.75em;
+  
   margin-top: 3rem;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 60rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  width: 90%;
+
 }
 
-.employee {
+.employees {
   background-color: rgba(253, 253, 253, 0.623);
   border-radius: 0.25rem;
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   margin: 0 auto;
   max-width: 60rem;
   margin-top: 3rem;
@@ -60,9 +81,21 @@ a {
   -moz-box-shadow: -7px 1px 36px -10px rgba(0, 0, 0, 0.75);
 }
 
-.employee h2 {
+.employees h2 {
   font-size: 1.618rem;
 }
+
+.input-group {
+    font-size: 0.75em;
+    margin-top: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .information-type {
+    padding-right: 0.25rem;
+    padding-top: 1rem;
+  }
 
 .title {
   font-size: 1.25rem;
@@ -78,7 +111,7 @@ p1 {
 
 button {
   background-color: rgb(141, 224, 116);
-  border: 1px forestgreen;
+  border: 1px rgb(26, 65, 26);
   font-size: 0.75rem;
   padding-left: 0.15rem;
   padding-right: 0.15rem;
@@ -93,6 +126,24 @@ button:hover {
   transition: 0.5s;
 }
 
+.contactUs__button button {
+    background-color: rgb(141, 224, 116);
+    border: 1 rgb(26, 65, 26);
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
+    margin-top: 1.618rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    text-decoration: none;
+  }
+  
+  .contactUs__button button:hover {
+    background: rgb(248, 211, 179);
+    border: 1px solid forestgreen;
+    border-radius: 1rem;
+    box-shadow: -4px, 6px 5px 0px (75, 1, 65, 0.75);
+    transition: 0.5s;
+  }
 @media only screen and (max-width: 767px) {
   body {
     align-items: center;
@@ -109,4 +160,4 @@ button:hover {
     display: flex;
     flex-direction: column;
   }
-} integrated to fullstyle.css*/
+}
