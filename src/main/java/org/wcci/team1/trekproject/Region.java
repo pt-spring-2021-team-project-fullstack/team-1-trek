@@ -13,7 +13,6 @@ public class Region {
     private String description;
     private String image;
     @ManyToOne
-    @JoinColumn(name = "continent_id")
     private Continent continent;
 
     public Long getId() {

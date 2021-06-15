@@ -13,19 +13,20 @@ public class TrekController {
     private TrekRepository trekRepo;
 
     @RequestMapping("/treks")
-    public String findAllTreks(Model model) {
+    public String displayTreks(Model model) {
         model.addAttribute("treks", trekRepo.findAll());
-        return "treks";
+        return "treksView";
     }
 
-    @RequestMapping("/trek")
-    public String findOneTrek(@RequestParam(value = "id") Long id, Model model) throws TrekNotFoundException {
+    // @RequestMapping("/trek")
+    //   public String findOneTrek(@RequestParam(value = "id") Long id, Model model) throws TrekNotFoundException {
 
-        if (trekRepo.findById(id) == null) {
-            throw new TrekNotFoundException();
-        }
-
-        model.addAttribute("trekModel", trekRepo.findById(id));
-        return "trekTemplate";
-    }
+    //     if (trekRepo.findById(id) == null) {
+    //           throw new TrekNotFoundException();
+    //     }
+//
+    //      model.addAttribute("trekModel", trekRepo.findById(id));
+    //   return "trekTemplate";
+    //  }
 }
+
