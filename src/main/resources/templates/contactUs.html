@@ -1,72 +1,36 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@roseholmesminton
-pt-spring-2021-team-project-fullstack
-/
-team-1-trek
-Private
-1
-10
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-team-1-trek/src/main/resources/templates/contactUs.html
-@FilsanMadar
-FilsanMadar html on contactUs complete
-Latest commit de2eab1 8 days ago
-History
-1 contributor
-40 lines (40 sloc)  1.29 KB
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="fullstyle.css" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us</title>
-</head>
-<body>
-<div class="container">
-  <h1>CONTACT US</h1>
-  <p1
-  >Please complete this form and hit the "Submit" button. One of our team
-    will then follow up with you. Please note, in 2021 we are currently in
-    hibernation, and working reduced hours. Hence a reply to your enquiry
-    and correspondence may be delayed.</p1
-  >
-  <form>
-    <div class="input-row">
-      <div class="input-group">
-        <label>Name</label>
-        <input type="text" placeholder="John Smith">
-      </div>
-      <div class="input-group">
-        <label>Phone Number</label>
-        <input type="text" placeholder="+1 800-123-4567">
-      </div>
-      <div class="input-group">
-        <label>Email</label>
-        <input type="email" placeholder="jackr@enterprise.com">
-      </div>
-      <div class="input-column">
-        <label>Send Message</label>
-        <textarea rows="10" placeholder="Your inquiry"></textarea>
-      </div>
-    </div>
-    <button class="contactUs__button" type="submit">SUBMIT</button>
-  </form>
-</body>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:th="http://www.thymeleaf.org">
+
+<main layout:fragment="content">
+    <div class="container">
+        <h1>CONTACT US</h1>
+        <p1>Please complete this form and hit the "Submit" button. One of our team
+            will then follow up with you. Please note, in 2021 we are currently in
+            hibernation, and working reduced hours. Hence a reply to your enquiry
+            and correspondence may be delayed.
+        </p1>
+        <form>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input placeholder="John Smith" type="text">
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input placeholder="+1 800-123-4567" type="text">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input placeholder="jackr@enterprise.com" type="email">
+                </div>
+                <div class="input-column">
+                    <label>Send Message</label>
+                    <textarea placeholder="Your inquiry" rows="10"></textarea>
+                </div>
+            </div>
+            <button class="contactUs__button" type="submit">SUBMIT</button>
+        </form>
+</main>
+
 </html>

@@ -1,11 +1,13 @@
 <header>
-    <link rel="stylesheet" href="fullstyle.css" />
-
     <nav>
         <span class="twentyPix"><h1>JacKr Enterprises</h1></span>
-      <ul>
-          <li><a href="/layouts/contactUs.html">Contact Us</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-      </ul>
+        <ul>
+            <li><a th:href=@{/treks}>Treks</a></li>
+            <li><a th:href=@{/trekTypes}>Trek Types</a></li>
+            <li><a th:href=@{/regions}>Regions</a></li>
+            <li><a th:href=@{/continents}>Continents</a></li>
+            <li><a th:href=@{/aboutUs}>About Us</a></li>
+            <li><a th:href=@{/contactUs}>Contact Us</a></li>
+        </ul>
     </nav>
 </header>
