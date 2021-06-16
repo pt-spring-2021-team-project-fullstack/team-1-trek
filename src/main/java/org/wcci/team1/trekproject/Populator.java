@@ -36,7 +36,7 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(australia);
         continentRepo.save(antarctica);
 
-        Region lakeLouise = new Region("Lake Louise", "description for Lake Louise", "resources/static/images/RockyMountains.jpg", northAmerica);
+        Region lakeLouise = new Region("Lake Louise", "description for Lake Louise", "images/RockyMountains.jpg", northAmerica);
         Region switzerland = new Region("Switzerland", "description for Switzerland", "/static/images/Switzerland.jpg", europe);
         Region indianHimalayanRegion = new Region("Lake Louise", "description for India Himalayan Region", "/static/images/IndianHimalayanRegion.jpg", asia);
         Region venezuela = new Region("Venezuela", "The northernmost part of the Andes has high farmlands and villages nestling beneath its dramatic peaks. The university town of Mérida is the centre of this region", "/static/images/Venezuela.jpg", southAmerica);
@@ -63,13 +63,13 @@ public class Populator implements CommandLineRunner {
         trekTypeRepo.save(crossCountrySkiing);
         trekTypeRepo.save(horsebackRiding);
 
-        Trek trek1 = new Trek("Rocky Mountains", "You will go cross country skiing in the Canadian Rockies", "/team-1-trek/src/main/resources/static/images/RockyMountains.jpg", northAmerica, lakeLouise, crossCountrySkiing);
-        Trek trek2 = new Trek("Alps", "You will hike the Alps", "/team-1-trek/src/main/resources/static/images/Alps.jpg", europe, switzerland, hiking);
-        Trek trek3 = new Trek("Himalayas", "You will climb to the top of the Himalayas", "/team-1-trek/src/main/resources/static/images/Himalayas.jpg", asia, indianHimalayanRegion, climbing);
+        Trek trek1 = new Trek("Rocky Mountains", "You will go cross country skiing in the Canadian Rockies", "/images/RockyMountains.jpg", northAmerica, lakeLouise, crossCountrySkiing);
+        Trek trek2 = new Trek("Alps", "You will hike the Alps", "/images/Alps.jpg", europe, switzerland, hiking);
+        Trek trek3 = new Trek("Himalayas", "You will climb to the top of the Himalayas", "/images/Himalayas.jpg", asia, indianHimalayanRegion, climbing);
         Trek trek4 = new Trek("Andes", "You go horseback riding in the Andes", "/images/Andes.jpg", southAmerica, venezuela, horsebackRiding);
-        Trek trek5 = new Trek("Mount Kilimanjaro", "You will climb to the top of Mount Kilimanjaro", "/team-1-trek/src/main/resources/static/images/MountKilimanjaro.jpg", africa, tanzania, climbing);
-        Trek trek6 = new Trek("Great Dividing Range", "You will go horseback riding in the Great Dividing Range", "/team-1-trek/src/main/resources/static/images/GreatDividingRange.jpg", australia, newSouthWales, horsebackRiding);
-        Trek trek7 = new Trek("Mt Tennant", "You will go cross-country skiing on Mt Tennant", "/team-1-trek/src/main/resources/static/images/Mt Tennant.jpg", antarctica, dancoCoast, crossCountrySkiing);
+        Trek trek5 = new Trek("Mount Kilimanjaro", "You will climb to the top of Mount Kilimanjaro", "/images/MountKilimanjaro.jpg", africa, tanzania, climbing);
+        Trek trek6 = new Trek("Great Dividing Range", "You will go horseback riding in the Great Dividing Range", "/images/GreatDividingRange.jpg", australia, newSouthWales, horsebackRiding);
+        Trek trek7 = new Trek("Mt Tennant", "You will go cross-country skiing on Mt Tennant", "/images/MtTennant.jpg", antarctica, dancoCoast, crossCountrySkiing);
 
 
         trekRepo.save(trek1);

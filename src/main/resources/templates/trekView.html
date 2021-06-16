@@ -3,10 +3,10 @@
     xmlns:th="http://www.thymeleaf.org">
 
 <main layout:fragment="content">
-    <h1 th:text="${trek.name}"></h1>
     <img th:src="${trek.image}">
-    <h3 th:text="${trek.continent}"></h3>
-    <h3 th:text="${trek.region}"></h3>
+    <h2 th:text="'Continent: ' + ${trek.continent.name}"></h2>
+    <h2 th:text="'Region: ' + ${trek.region.name}"></h2>
+    <h2 th:text="'Trek Type: ' + ${trek.trekType.name}"></h2>
     <ul>
         <p><a href="/treks">Treks</a></p>
         <li th:text="${trek.name}"></li>
