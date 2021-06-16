@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${trek.name}">Name</title>
+</head>
+<h1 th:text="${trek.name}"></h1>
+<body>
+<img th:src="${trek.image}">
+<h3 th:text="${trek.continent.name}"></h3>
+<h3 th:text="${trek.region.name}"></h3>
+<h3 th:text="${trek.trekType.name}"></h3>
+<ul>
+    <p><a href="/treks">Treks</a></p>
+    <li th:text="${trek.name}"></li>
+    <p th:text="${trek.description}"></p>
+</ul>
+</body>
+</html>

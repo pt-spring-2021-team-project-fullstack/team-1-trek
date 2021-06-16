@@ -25,6 +25,17 @@ public class Populator implements CommandLineRunner {
         trekTypeRepo.save(skiing);
         trekTypeRepo.save(horseBackRiding);
 
+<<<<<<< Updated upstream
+=======
+        Trek trek1 = new Trek("Rocky Mountains", "You will go cross country skiing in the Canadian Rockies", "/images/RockyMountains.jpg", northAmerica, lakeLouise, crossCountrySkiing);
+        Trek trek2 = new Trek("Alps", "You will hike the Alps", "/images/Alps.jpg", europe, switzerland, hiking);
+        Trek trek3 = new Trek("Himalayas", "You will climb to the top of the Himalayas", "/images/Himalayas.jpg", asia, indianHimalayanRegion, climbing);
+        Trek trek4 = new Trek("Andes", "You will go horseback riding in the Andes", "/images/Andes.jpg", southAmerica, venezuela, horsebackRiding);
+        Trek trek5 = new Trek("Mount Kilimanjaro", "You will climb to the top of Mount Kilimanjaro", "/images/MountKilimanjaro.jpg", africa, tanzania, climbing);
+        Trek trek6 = new Trek("Great Dividing Range", "You will go horseback riding in the Great Dividing Range", "/images/GreatDividingRange.jpg", australia, newSouthWales, horsebackRiding);
+        Trek trek7 = new Trek("Mt Tennant", "You will go cross-country skiing on Mt Tennant", "/images/Mt Tennant.jpg", antarctica, dancoCoast, crossCountrySkiing);
+
+>>>>>>> Stashed changes
 
         TrekList trek1 = new TrekList("Mount Kilimanjaro", "Africa", "Tanzania", "climbing");
         TrekList trek2 = new TrekList("Andes", "South America", "Venezuela", "horseback riding");
