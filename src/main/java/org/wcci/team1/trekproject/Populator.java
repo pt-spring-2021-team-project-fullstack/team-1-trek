@@ -36,7 +36,7 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(australia);
         continentRepo.save(antarctica);
 
-        Region lakeLouise = new Region("Lake Louise", "description for Lake Louise", "resources/static/images/RockyMountains.jpg", northAmerica);
+        Region lakeLouise = new Region("Lake Louise", "description for Lake Louise", "images/RockyMountains.jpg", northAmerica);
         Region switzerland = new Region("Switzerland", "description for Switzerland", "/static/images/Switzerland.jpg", europe);
         Region indianHimalayanRegion = new Region("Lake Louise", "description for India Himalayan Region", "/static/images/IndianHimalayanRegion.jpg", asia);
         Region venezuela = new Region("Venezuela", "The northernmost part of the Andes has high farmlands and villages nestling beneath its dramatic peaks. The university town of Mérida is the centre of this region", "/static/images/Venezuela.jpg", southAmerica);
