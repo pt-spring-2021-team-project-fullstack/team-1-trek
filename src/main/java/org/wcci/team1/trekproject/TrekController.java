@@ -2,6 +2,8 @@ package org.wcci.team1.trekproject;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -17,16 +19,16 @@ public class TrekController {
         model.addAttribute("treks", trekRepo.findAll());
         return "treksView";
     }
+    @GetMapping("/treks/{name}")
+    public String displaySingleTrek(@PathVariable String name, Model model){
+        Trek retrievedTrek= trekRepo.findTrekByName(name);
+        model.addAttribute("trek",retrievedTrek);;
+        retrievedTrek.getDescription();
+        retrievedTrek.getImage();
+        retrievedTrek.getContinent();
+        retrievedTrek.getRegion();
+        retrievedTrek.getTrekType();
 
-    // @RequestMapping("/trek")
-    //   public String findOneTrek(@RequestParam(value = "id") Long id, Model model) throws TrekNotFoundException {
-
-    //     if (trekRepo.findById(id) == null) {
-    //           throw new TrekNotFoundException();
-    //     }
-//
-    //      model.addAttribute("trekModel", trekRepo.findById(id));
-    //   return "trekTemplate";
-    //  }
+        return "trekView";
+    }
 }
-

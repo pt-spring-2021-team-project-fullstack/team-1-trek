@@ -43,6 +43,14 @@ public class Trek {
         return trekType;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
     protected Trek() {
     }
 
