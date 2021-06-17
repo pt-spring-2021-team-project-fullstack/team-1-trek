@@ -2,6 +2,14 @@ package org.wcci.team1.trekproject;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.wcci.team1.trekproject.models.Continent;
+import org.wcci.team1.trekproject.models.Region;
+import org.wcci.team1.trekproject.models.Trek;
+import org.wcci.team1.trekproject.models.TrekType;
+import org.wcci.team1.trekproject.repositories.ContinentRepository;
+import org.wcci.team1.trekproject.repositories.RegionRepository;
+import org.wcci.team1.trekproject.repositories.TrekRepository;
+import org.wcci.team1.trekproject.repositories.TrekTypeRepository;
 
 import javax.annotation.Resource;
 

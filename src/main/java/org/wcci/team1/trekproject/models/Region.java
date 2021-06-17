@@ -1,4 +1,4 @@
-package org.wcci.team1.trekproject;
+package org.wcci.team1.trekproject.models;
 
 
 import javax.persistence.*;
@@ -10,6 +10,7 @@ public class Region {
     @GeneratedValue
     private Long id;
     private String name;
+    @Lob
     private String description;
     private String image;
     @ManyToOne
@@ -39,7 +40,6 @@ public class Region {
         this.description = description;
         this.image = image;
         this.continent = continent;
-
     }
 
     @Override

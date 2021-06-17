@@ -1,4 +1,4 @@
-package org.wcci.team1.trekproject;
+package org.wcci.team1.trekproject.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

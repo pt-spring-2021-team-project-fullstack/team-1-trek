@@ -1,11 +1,12 @@
-package org.wcci.team1.trekproject;
+package org.wcci.team1.trekproject.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.wcci.team1.trekproject.repositories.TrekRepository;
+import org.wcci.team1.trekproject.models.Trek;
 
 import javax.annotation.Resource;
 
