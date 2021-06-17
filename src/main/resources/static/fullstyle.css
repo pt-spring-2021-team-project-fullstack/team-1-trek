@@ -41,6 +41,12 @@ a {
   text-decoration: none;
 }
 
+body{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+}
+
 button {
   background-color: rgb(177, 175, 175);
   border: 1px #eee;
@@ -82,10 +88,11 @@ ul {
 }
 
 .about-section {
+  color: #222;
   font-size: 0.75em;
   margin-top: 3rem;
   max-width: 60rem;
-  padding-left: 1.5rem;
+  padding-left: 9rem;
   padding-right: 1.5rem;
   text-align: center;
   width: 90%;
@@ -119,7 +126,7 @@ ul {
 }
 
 .container {
-  background-color: #222;
+  background-color: rgba(10, 15, 9, 0.623);
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   border-top-left-radius: 0.25em;
@@ -142,7 +149,7 @@ ul {
 }
 
 .employees {
-    background-color: rgba(253, 253, 253, 0.623);
+    background-color: rgba(10, 15, 9, 0.623);
     border-radius: 0.25rem;
     display: grid;
     grid-column-gap: 2em;
