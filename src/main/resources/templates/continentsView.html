@@ -4,5 +4,7 @@
 
 <main layout:fragment="content">
     <h1>Continents</h1>
+    <h2 th:each="continent:${continent}"><a th:href="@{'/continent/' + ${continent.name}}" th:text="${continent.name}"></a></h2>
+
 </main>
 </html>

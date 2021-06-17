@@ -4,5 +4,6 @@
 
 <main layout:fragment="content">
     <h1>Regions</h1>
+    <h2 th:each="region:${region}"><a th:href="@{'/region/' + ${region.name}}" th:text="${region.name}"></a></h2>
 </main>
 </html>
