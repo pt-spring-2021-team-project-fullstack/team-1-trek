@@ -50,7 +50,7 @@ public class Populator implements CommandLineRunner {
         Region venezuela = new Region("Venezuela", "The northernmost part of the Andes has high farmlands and villages nestling beneath its dramatic peaks. The university town of Mérida is the centre of this region", "/images/Venezuela.jpg", southAmerica);
         Region tanzania = new Region("Tanzania", "Kilimanjaro is the highest point in Africa. This volcanic massif stands in splendid isolation above the surrounding plains, with its snowy peak looming over the savannah. The mountain is encircled by mountain forest", "/images/Tanzania.jpg", africa);
         Region newSouthWales = new Region("New South Wales", "Great Dividing Range, also called Great Divide, Eastern Highlands, or Eastern Cordillera, main watershed of eastern Australia; it comprises a series of plateaus and low mountain ranges roughly paralleling the coasts of Queensland, New South Wales, and Victoria for 2,300 miles", "/images/NewSouthWales.jpg", australia);
-        Region dancoCoast = new Region("Danco Coast", "The Danco Coast is the northwestern section of the coast of the Antarctic Peninsula located between 64 ° and 65 ° South.", "/images/ Danco Coast.jpg", antarctica);
+        Region dancoCoast = new Region("Danco Coast", "The Danco Coast is the northwestern section of the coast of the Antarctic Peninsula located between 64 ° and 65 ° South.", "/images/DancoCoast.jpg", antarctica);
 
 
 
