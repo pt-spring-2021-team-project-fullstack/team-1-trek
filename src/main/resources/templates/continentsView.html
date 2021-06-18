@@ -2,9 +2,9 @@
 <html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
     xmlns:th="http://www.thymeleaf.org">
 
-<main layout:fragment="content">
+<main layout:fragment="contents">
     <h1>Continents</h1>
-    <h2 th:each="continent:${continent}"><a th:href="@{'/continent/' + ${continent.name}}" th:text="${continent.name}"></a></h2>
+    <h2 th:each="continent:${continents}"><a th:href="@{'/continents/' + ${continent.name}}" th:text="${continent.name}">Name</a></h2>
 
 </main>
 </html>
