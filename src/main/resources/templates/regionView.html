@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+
+<main layout:fragment="content">
+  <img th:src="${region.image}">
+  <h2 th:text="'Continent: ' + ${region.continent.name}"></h2>
+  <ul>
+    <p><a href="/regions">Regions</a></p>
+    <li th:text="${region.name}"></li>
+    <p th:text="${region.description}"></p>
+  </ul>
+</main>

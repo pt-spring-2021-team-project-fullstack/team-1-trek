@@ -1,6 +1,5 @@
 package org.wcci.team1.trekproject.models;
 
-
 import javax.persistence.*;
 import java.util.Objects;
 
