@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
     xmlns:th="http://www.thymeleaf.org">
 
@@ -6,4 +7,18 @@
     <h1>Trek Types</h1>
 </main>
 
+=======
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>TrekTypes View</title>
+</head>
+<body>
+<h1>We Offer the Following Types of Treks</h1>
+<h2 th:each="trekType:${trekTypes}">  <a th:href="@{'/trekTypes/' + ${trekType.name}}" th:text ="${trekType.name}"></a></h2>
+
+
+</body>
+>>>>>>> trektypeview
 </html>

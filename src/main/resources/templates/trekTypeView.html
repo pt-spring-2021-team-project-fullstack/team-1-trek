@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${trekType.name}">Name</title>
+</head>
+<h1 th:text="${trekType.name}"></h1>
+<body>
+<img th:src="${trekType.image}">
+<ul>
+  <p><a href="/trekTypes">Trek Types</a></p>
+  <li th:text="${trekType.name}"></li>
+  <p th:text="${trekType.description}"></p>
+</ul>
+</body>
+</html>

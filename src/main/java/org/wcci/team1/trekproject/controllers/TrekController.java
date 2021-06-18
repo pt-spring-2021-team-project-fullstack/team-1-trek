@@ -5,8 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+<<<<<<< HEAD:src/main/java/org/wcci/team1/trekproject/controllers/TrekController.java
 import org.wcci.team1.trekproject.repositories.TrekRepository;
 import org.wcci.team1.trekproject.models.Trek;
+=======
+>>>>>>> trektypeview:src/main/java/org/wcci/team1/trekproject/TrekController.java
 
 import javax.annotation.Resource;
 
