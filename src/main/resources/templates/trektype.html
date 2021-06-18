@@ -5,7 +5,7 @@
 
 <h1>We offer the following Treks:</h1>
 <main layout:fragment="content">
-    <ul> th:each="trekType: ${trekTypeModel}" ><a th:href="@{/trekType(id=$trekType.id})}" th:text="$trekType.name}"></a>
+    <ul> th:each="trekType: ${trekTypeModel}" ><a th:href="@{/trekType(id=$trekType.id})}" th:text="{$trekType.name}"></a>
     </ul>
     <h2 th:text="{trekTypeModel.description}"></h2>
 

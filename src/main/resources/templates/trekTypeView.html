@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${trekType.name}">Trek Name</title>
+</head>
+<body>
+<h1 th:text="${trekType.name}"></h1>
+<nav class="trekType-list-nav">
+  <ul class="trekType-list-links">
+    <li class="trekType-list-links__trek" th:each="trekType:${trekTypes}">
+      <li th:text="${trek.name}"></li>
+      <a class=" trek-list-links__link" th:href="@{'/treks/'+${trek.name}}"
+         th:text="${trek.name}">Trek Name</a>
+    </li>
+  </ul>
+</nav>
+<a class="nav__home" href="/trekTypes"> back to Trek Types</a>
+</body>

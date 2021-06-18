@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
-    <title>Trek Types View</title>
+    <title>TrekTypes View</title>
 </head>
 <body>
-<h1>Trek Types</h1>
+<h1>We Offer the Following Types of Treks</h1>
+<h2 th:each="trekType:${trekTypes}">  <a th:href="@{'/trekTypes/' + ${trekType.name}}" th:text ="${trekType.name}"></a></h2>
+
+
 </body>
 </html>
