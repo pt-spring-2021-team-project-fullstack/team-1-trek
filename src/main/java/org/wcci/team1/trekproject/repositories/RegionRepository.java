@@ -9,5 +9,6 @@ public interface RegionRepository extends CrudRepository<Region, Long> {
 
     Optional<Region> findById(long id);
     Region findRegionByName(String name);
+
 }
 

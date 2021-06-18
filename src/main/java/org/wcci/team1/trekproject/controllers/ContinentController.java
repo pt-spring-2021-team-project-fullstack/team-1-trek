@@ -31,6 +31,7 @@ public class ContinentController {
         retrievedContinent.getName();
         retrievedContinent.getDescription();
         retrievedContinent.getImage();
+        retrievedContinent.getRegions();
 
         return "continentView";
     }
