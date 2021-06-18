@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title th:text="${trekType.name}">Name</title>
-</head>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+
+<main layout:fragment="content">
+
 <h1 th:text="${trekType.name}"></h1>
-<body>
 <img th:src="${trekType.image}">
 <ul>
   <p><a href="/trekTypes">Trek Types</a></p>
   <li th:text="${trekType.name}"></li>
   <p th:text="${trekType.description}"></p>
 </ul>
-</body>
+</main>
 </html>
