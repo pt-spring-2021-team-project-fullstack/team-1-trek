@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Region Views</title>
-</head>
-<body>
-<h1>Regions</h1>
-</body>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:th="http://www.thymeleaf.org">
+
+<main layout:fragment="content">
+    <h1>Regions</h1>
+    <h2 th:each="region:${region}"><a th:href="@{'/region/' + ${region.name}}" th:text="${region.name}"></a></h2>
+</main>
 </html>

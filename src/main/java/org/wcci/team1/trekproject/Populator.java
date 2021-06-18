@@ -2,6 +2,14 @@ package org.wcci.team1.trekproject;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.wcci.team1.trekproject.models.Continent;
+import org.wcci.team1.trekproject.models.Region;
+import org.wcci.team1.trekproject.models.Trek;
+import org.wcci.team1.trekproject.models.TrekType;
+import org.wcci.team1.trekproject.repositories.ContinentRepository;
+import org.wcci.team1.trekproject.repositories.RegionRepository;
+import org.wcci.team1.trekproject.repositories.TrekRepository;
+import org.wcci.team1.trekproject.repositories.TrekTypeRepository;
 
 import javax.annotation.Resource;
 
@@ -22,9 +30,9 @@ public class Populator implements CommandLineRunner {
 
         Continent northAmerica = new Continent("North America", "Rocky Mountain National Park is in northeast Colorado, flanked by the towns of Estes Park on the east and Grand Lake on the west. Other nearby towns include Lyons, Winter Park, Granby and Boulder", "/images/NorthAmerica.jpg");
         Continent europe = new Continent("Europe", "Spanning across Europe, The Alps are the highest and most extensive mountain range system that lies entirely in Europe. The Winter Olympic Games have been hosted in the Swiss, French, Italian, Austrian and German Alps", "/images/Europe.jpg");
-        Continent asia = new Continent("Asia", "Asia Description", "/images/Asia.jpg");
+        Continent asia = new Continent("Asia", "AAsia is the largest and most populous continent, home to the largest (Russia) and most populous (China) nations. ", "/images/Asia.jpg");
         Continent southAmerica = new Continent("South America", "Venezuela is a country in South America, bordering the Caribbean Sea and the North Atlantic Ocean, between Colombia and Guyana. It is situated on major sea and air routes linking North and South America.", "/images/Africa.jpg");
-        Continent africa = new Continent("Africa", "Kilimanjaro is the highest point in Africa. This volcanic massif stands in splendid isolation above the surrounding plains, with its snowy peak looming over the savannah. The mountain is encircled by mountain forest", "/images/Africa.jpg");
+        Continent africa = new Continent("Africa", "Africa is sometimes nicknamed the \"Mother Continent\" due to its being the oldest inhabited continent on Earth. Africa, the second-largest continent, is bounded by the Mediterranean Sea, the Red Sea, the Indian Ocean, and the Atlantic Ocean", "/images/Africa.jpg");
         Continent australia = new Continent("Australia", "Eastern side of Australia, where most of the population resides. The climate in the area is dominated by a humid subtropical zone, with some tropical, and some oceanic climate zones. ", "/images/Australia.jpg");
         Continent antarctica = new Continent("Antarctica", "This is in the Antarctic Peninsula, the mountains elevation is approximately 2,264ft. ", "/images/Antarctica.jpg");
 
@@ -38,11 +46,11 @@ public class Populator implements CommandLineRunner {
 
         Region lakeLouise = new Region("Lake Louise", "description for Lake Louise", "images/RockyMountains.jpg", northAmerica);
         Region switzerland = new Region("Switzerland", "description for Switzerland", "/static/images/Switzerland.jpg", europe);
-        Region indianHimalayanRegion = new Region("Lake Louise", "description for India Himalayan Region", "/static/images/IndianHimalayanRegion.jpg", asia);
+        Region indianHimalayanRegion = new Region("Lake Louise", "The Himalayas stretch uninterruptedly for about 1,550 miles (2,500 km) in Asia, forming a barrier between the Plateau of Tibet to the north and the alluvial plains of the Indian subcontinent to the south", "/static/images/IndianHimalayanRegion.jpg", asia);
         Region venezuela = new Region("Venezuela", "The northernmost part of the Andes has high farmlands and villages nestling beneath its dramatic peaks. The university town of Mérida is the centre of this region", "/static/images/Venezuela.jpg", southAmerica);
-        Region tanzania = new Region("Tanzania", "description for Tanzania", "/static/images/Tanzania.jpg", africa);
-        Region newSouthWales = new Region("New South Wales", "description for New South Wales", "/static/images/NewSouthWales.jpg", australia);
-        Region dancoCoast = new Region("Danco Coast", "description for  Danco Coast", "/static/images/ Danco Coast.jpg", antarctica);
+        Region tanzania = new Region("Tanzania", "Kilimanjaro is the highest point in Africa. This volcanic massif stands in splendid isolation above the surrounding plains, with its snowy peak looming over the savannah. The mountain is encircled by mountain forest", "/static/images/Tanzania.jpg", africa);
+        Region newSouthWales = new Region("New South Wales", "Great Dividing Range, also called Great Divide, Eastern Highlands, or Eastern Cordillera, main watershed of eastern Australia; it comprises a series of plateaus and low mountain ranges roughly paralleling the coasts of Queensland, New South Wales, and Victoria for 2,300 miles", "/static/images/NewSouthWales.jpg", australia);
+        Region dancoCoast = new Region("Danco Coast", "The Danco Coast is the northwestern section of the coast of the Antarctic Peninsula located between 64 ° and 65 ° South.", "/static/images/ Danco Coast.jpg", antarctica);
 
 
         regionRepo.save(lakeLouise);

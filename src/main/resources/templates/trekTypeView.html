@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title th:text="${trekType.name}">Trek Name</title>
-</head>
-<body>
-<h1 th:text="${trekType.name}"></h1>
-<nav class="trekType-list-nav">
-  <ul class="trekType-list-links">
-    <li class="trekType-list-links__trek" th:each="trekType:${trekTypes}">
-      <li th:text="${trek.name}"></li>
-      <a class=" trek-list-links__link" th:href="@{'/treks/'+${trek.name}}"
-         th:text="${trek.name}">Trek Name</a>
-    </li>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+
+<main layout:fragment="content">
+  <img th:src="${trekType.image}">
+    <h2 th:text="'Trek Type: ' + ${trekType.name}"></h2>
+  <ul>
+    <p><a href="/treks">Treks</a></p>
+
+    <p th:text="${trekType.description}"></p>
   </ul>
-</nav>
-<a class="nav__home" href="/trekTypes"> back to Trek Types</a>
-</body>
+</main>
+
+</html>

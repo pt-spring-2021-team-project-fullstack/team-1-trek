@@ -1,20 +1,20 @@
 <title>Nav Bar example</title>
-<link rel="stylesheet" href="navstyle.css">
+<link href="navstyle.css" rel="stylesheet">
 
 <body>
-<div class = "nav-container">
-<nav class= "navbar">
-<ul>
-<li><a href="">Home</a></li>
-<li><a href="home.html">Home</a></li>
-<li><a href=team-1-trek\src\main\resources\templates\aboutUs.html">About Us</a></li>
-<li><a href="contactUs.html">Contact Us</a></li>
-<li><a th:href="@{~/team-1-trek/treks.htm}">Treks</a></li>
-<li><a th:href="@{~/team-1-trek/trektype.htm}">Trek Types</a></li>
-<li><a th:href="@{/regions}">Regions</a></li>
-<li><a th:href="@{/continents}">Continents</a></li>
-</ul>
-</nav>
+<div class="nav-container">
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href=team-1-trek\src\main\resources\templates\aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a th:href="@{~/team-1-trek/treks.htm}">Treks</a></li>
+            <li><a th:href="@{~/team-1-trek/trektype.htm}">Trek Types</a></li>
+            <li><a th:href="@{/regions}">Regions</a></li>
+            <li><a th:href="@{/continents}">Continents</a></li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>

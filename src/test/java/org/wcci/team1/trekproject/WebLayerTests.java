@@ -7,6 +7,14 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
+import org.wcci.team1.trekproject.models.Continent;
+import org.wcci.team1.trekproject.models.Region;
+import org.wcci.team1.trekproject.models.Trek;
+import org.wcci.team1.trekproject.models.TrekType;
+import org.wcci.team1.trekproject.repositories.ContinentRepository;
+import org.wcci.team1.trekproject.repositories.RegionRepository;
+import org.wcci.team1.trekproject.repositories.TrekRepository;
+import org.wcci.team1.trekproject.repositories.TrekTypeRepository;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

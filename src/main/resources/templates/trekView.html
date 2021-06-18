@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title th:text="${trek.name}">Name</title>
-</head>
-<h1 th:text="${trek.name}"></h1>
-<body>
-<img th:src="${trek.image}">
-<h2 th:text="'Continent: ' + ${trek.continent.name}"></h2>
-<h2 th:text="'Region: ' + ${trek.region.name}"></h2>
-<h2 th:text="'Trek Type: ' + ${trek.trekType.name}"></h2>
-<ul>
-    <p><a href="/treks">Treks</a></p>
-    <li th:text="${trek.name}"></li>
-    <p th:text="${trek.description}"></p>
-</ul>
-</body>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:th="http://www.thymeleaf.org">
+
+<main layout:fragment="content">
+    <img th:src="${trek.image}">
+    <h2 th:text="'Continent: ' + ${trek.continent.name}"></h2>
+    <h2 th:text="'Region: ' + ${trek.region.name}"></h2>
+    <h2 th:text="'Trek Type: ' + ${trek.trekType.name}"></h2>
+    <ul>
+        <p><a href="/treks">Treks</a></p>
+
+        <p th:text="${trek.description}"></p>
+    </ul>
+</main>
+
 </html>

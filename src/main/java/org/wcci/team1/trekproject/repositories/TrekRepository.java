@@ -1,6 +1,7 @@
-package org.wcci.team1.trekproject;
+package org.wcci.team1.trekproject.repositories;
 
 import org.springframework.data.repository.CrudRepository;
+import org.wcci.team1.trekproject.models.Trek;
 
 import java.util.Optional;
 

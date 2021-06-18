@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-    <meta charset="UTF-8">
-    <title>Treks View</title>
-</head>
-<body>
-<h1>Treks</h1>
-<h2 th:each="trek:${treks}">  <a th:href="@{'/treks/' + ${trek.name}}" th:text="${trek.name}"> Name</a></h2>
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:th="http://www.thymeleaf.org">
 
-</body>
+<main layout:fragment="content">
+    <h1>Treks</h1>
+    <h2 th:each="trek:${treks}"><a th:href="@{'/treks/' + ${trek.name}}" th:text="${trek.name}"> Name</a></h2>
+</main>
+
 </html>

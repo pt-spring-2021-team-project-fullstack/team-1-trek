@@ -1,4 +1,4 @@
-package org.wcci.team1.trekproject;
+package org.wcci.team1.trekproject.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,49 +7,37 @@ import javax.persistence.OneToMany;
 import java.util.Collection;
 import java.util.Objects;
 
-
 @Entity
-public class Continent {
+public class TrekType {
     @Id
     @GeneratedValue
     private Long id;
+
     private String name;
     private String description;
     private String image;
-    @OneToMany(mappedBy = "continent")
+    @OneToMany(mappedBy = "trekType")
     private Collection<Trek> treks;
-    @OneToMany(mappedBy = "continent")
-    private Collection<Region> regions;
-
-    public Long getId() {
-        return id;
-    }
 
     public String getName() {
         return name;
     }
 
-    public String getDescription() {
+    public String getDescription(){
         return description;
     }
 
-    public String getImage() {
+    public String getImage(){
         return image;
     }
-
     public Collection<Trek> getTreks() {
         return treks;
     }
 
-    public Collection<Region> getRegions() {
-        return regions;
+    protected TrekType(){
     }
 
-    protected Continent(){
-
-    }
-
-    public Continent(String name, String description, String image) {
+    public TrekType(String name, String description, String image) {
         this.name = name;
         this.description = description;
         this.image = image;
@@ -59,8 +47,8 @@ public class Continent {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Continent continent = (Continent) o;
-        return Objects.equals(id, continent.id);
+        TrekType trekType = (TrekType) o;
+        return Objects.equals(id, trekType.id);
     }
 
     @Override

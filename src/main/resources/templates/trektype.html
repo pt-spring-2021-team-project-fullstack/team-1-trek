@@ -1,15 +1,16 @@
-<html lang="en"
-      layout:decorate="~{layouts/layout}"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      xmlns:th="http://www.thymeleaf.org">
+<html lang="en" layout:decorate="~{layouts/layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:th="http://www.thymeleaf.org">
 
-<h1>We offer the following Treks:</h1>
 <main layout:fragment="content">
+<<<<<<< HEAD
     <ul> th:each="trekType: ${trekTypeModel}" ><a th:href="@{/trekType(id=$trekType.id})}" th:text="{$trekType.name}"></a>
+=======
+    <h1>We offer the following Treks:</h1>
+    <ul> th:each="trekType: ${trekTypeModel}" ><a th:href="@{/trekType(id=$trekType.id})}"
+            th:text="$trekType.name}"></a>
+>>>>>>> 7839d544bac5473a940b5ece60af9a853f692a67
     </ul>
     <h2 th:text="{trekTypeModel.description}"></h2>
 
 </main>
 </html>
-
-

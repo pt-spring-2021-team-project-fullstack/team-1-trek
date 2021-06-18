@@ -1,4 +1,4 @@
-package org.wcci.team1.trekproject;
+package org.wcci.team1.trekproject.models;
 
 
 import javax.persistence.Entity;
