@@ -35,7 +35,7 @@ nav {
 }
 
 a {
-  color: rgb(228, 228, 228);
+  color: rgb(151, 133, 133);
   padding: 0.25rem 0.5rem;
   text-decoration: none;
 }
@@ -172,7 +172,8 @@ ul {
   
 .header {
   align-items: center;
-  background-color: rgb(34, 10, 10);
+  background-color: rgb(75, 37, 37);
+  height: 150px;
   display: flex;
   justify-content: space-between;
 }
