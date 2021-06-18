@@ -6,7 +6,8 @@ import org.wcci.team1.trekproject.models.Region;
 import java.util.Optional;
 
 public interface RegionRepository extends CrudRepository<Region, Long> {
-//    @Override
+
     Optional<Region> findById(long id);
+    Region findRegionByName(String name);
 }
 
